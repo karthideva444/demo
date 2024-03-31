@@ -12,6 +12,13 @@ from django.http import HttpResponse
 #rest_framework
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
+from django.http.response import HttpResponseServerError
+
+@csrf_exempt
+def hello(request):
+    res = "helloworld"
+    data = JSONRenderer().render(res)
+    return HttpResponse(data,content_type='application/json')
 
 @csrf_exempt
 def student_api(request):
