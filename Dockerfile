@@ -8,7 +8,7 @@ RUN mkdir /demo_crud/
 
 WORKDIR /demo_crud
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip 
 
 COPY requirements.txt /demo_crud/
 
