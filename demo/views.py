@@ -94,4 +94,5 @@ def student_create(request):
             return HttpResponse(json_data,content_type='application/json')
         return HttpResponse(JSONRenderer().render(serializer.errors),content_type='application/json')
 
+print("added message from karthick branch")
 
